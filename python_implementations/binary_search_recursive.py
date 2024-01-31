@@ -1,4 +1,8 @@
 import math
+
+#Searches for k in a sorted array of integers
+#Returns the index at which k is found, if it is found
+#Returns -1 if k is not found
 def binary_search_recursive(sorted, k, start, end):
     mid = math.floor((start + end) / 2)
     #Base case: found k at sorted[mid]
