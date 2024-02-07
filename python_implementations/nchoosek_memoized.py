@@ -12,7 +12,7 @@ def n_choose(n, k):
     return n_choose(n-1, k-1) + n_choose(n-1, k) #sum their solutions together to get my own
 
 
-#Dynamic Programming version, uses Memoization, runs in linear time O(n)
+#Dynamic Programming version, uses Memoization, runs in O(n * k) time
 def n_choose_memo(n,k,table):
     #check the table storing our solutions first to see if I even need to do any work:
     if table[n][k] != -1:
