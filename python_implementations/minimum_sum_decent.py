@@ -67,7 +67,7 @@ n = 4
 print("The initial table looks like this: ")
 print_matrix(table, n, n)
 
-print("The minimum sum decent is to move from 2 --> 7 --> 1 --> 1, for a total minimum sum of 11. Lets see it in action: ")
+print("The minimum sum decent for this example is to move from 2 --> 7 --> 1 --> 1, for a total minimum sum of 11. Lets see it in action: ")
 print("\n")
 
 min_sum_decent = min_sum(table, n)
