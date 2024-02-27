@@ -1,7 +1,8 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 
-#Helper function:
+#-----HELPER FUNCTION--------#
+#Generates a 2D adjacency matrix
 def create_adjacency_matrix(vertices,edges):
     total_vertices=len(vertices) + 1 #account for no 0-vertex
     adj_matrix=[]
