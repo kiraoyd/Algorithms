@@ -62,4 +62,4 @@ matrix2 = [
     [0,0,0,0,0,0,0,0,0,1,0]
 ]
 
-create_graph(matrix)
+create_graph(matrix2)
