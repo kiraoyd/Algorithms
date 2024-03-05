@@ -20,6 +20,8 @@ def dfs(matrix, start, total_nodes):
                 if matrix[current_node][neighbor] == 1 and not visited[neighbor]:
                     stack.append(neighbor)
                 neighbor += 1
+
+        print(stack)
         #Since we push and pop to the top of the stack, we bury unvisited neighbors from earlier levels
         #So we end up traversing as far down as we can, before backtracking back up to the last unvisited neighbor of some node above
 
