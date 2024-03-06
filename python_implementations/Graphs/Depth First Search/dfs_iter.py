@@ -26,10 +26,10 @@ def dfs(matrix, start, total_nodes):
         #So we end up traversing as far down as we can, before backtracking back up to the last unvisited neighbor of some node above
 
     #Once there are no more unvisited neighbors on the stack, we are done and have visited every node
-    print(visited) #View the visited array to see all nodes have been visited
+    print(visited) #View the visited array to see all nodes have been visited (except the non-existent 0-node)
 
 
-#---MAIN----#
+#---MAIN CALLING ROUTINE---#
 
 matrix = [
     [0,0,0,0,0,0,0,0,0,0,0],
@@ -45,5 +45,6 @@ matrix = [
     [0,0,0,0,0,0,0,0,0,1,0]
 ]
 
-
-dfs(matrix, 5, 10)
+start = 5
+total_nodes = 10
+dfs(matrix, start, total_nodes)

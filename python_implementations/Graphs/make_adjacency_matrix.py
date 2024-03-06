@@ -44,5 +44,9 @@ def create_adjacency_matrix(vertices,edges):
 vertices=[1,2,3,4,5,6,7,8,9,10]
 edges=[[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10]]
 
+
+vertices=[1,2,3,4,5,6,7,8,9]
+edges=[[1,2],[1,4],[1,9],[2,3],[4,5],[5,6],[5,7],[6,7],[6,8],[7,8]]
+
 matrix = create_adjacency_matrix(vertices,edges)
 print(matrix)

@@ -3,7 +3,8 @@ def dfs_wrapper(matrix, start, total_nodes):
 
     #Make the first call to "visit" the start node
     dfs_recursive(matrix, start, visited, total_nodes)
-    print(visited)
+
+    print(visited) #after we return all the way back, we should have visited all but the nonexistent 0-node
 
 
 #each call to dfs_recursive "visits" the current_node passed to it as an argument
@@ -25,3 +26,22 @@ def dfs_recursive(matrix, current_node, visited, total_nodes):
             dfs_recursive(matrix, neighbor, visited, total_nodes) #The while loop pauses at each recursive call, allowing us tp traverse depth first
         neighbor += 1
 
+#------MAIN CALLING ROUTINE--------#
+
+matrix = [
+    [0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,1,0,0,1,0,1,0,0,0],
+    [0,1,0,1,0,1,1,0,1,0,0],
+    [0,0,1,0,0,0,1,0,0,0,0],
+    [0,0,0,0,0,1,0,0,1,1,0],
+    [0,1,1,0,1,0,0,0,0,0,0],
+    [0,0,1,1,0,0,0,0,0,0,0],
+    [0,1,0,0,0,0,0,0,0,0,0],
+    [0,0,1,0,1,0,0,0,0,0,0],
+    [0,0,0,0,1,0,0,0,0,0,1],
+    [0,0,0,0,0,0,0,0,0,1,0]
+]
+
+start = 5
+total_nodes = 10
+dfs_wrapper(matrix, start, total_nodes)
